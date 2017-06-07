@@ -5,10 +5,15 @@ var maleNames = ['Maciej', 'Andrzej', 'Praweł', 'Wiesław', 'Jarosław'];
 
 var allTheNames = femaleNames.concat(maleNames);
 
+console.log(allTheNames);
 
-if (allTheNames.indexOf('Agnieszka') >= 0) {
+var additionalName = 'Agnieszka';
+
+if (allTheNames.indexOf(additionalName) >= 0) {
 	console.log('Imię już się pojawiło');
 }
 else {
-	allTheNames.splice(3, 0, 'Agnieszka');
+	allTheNames.splice(3, 0, additionalName);
 }
+
+console.log(allTheNames);
